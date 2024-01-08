@@ -1,0 +1,8 @@
+name = "launchdarkly"
+main = "src/index.ts"
+compatibility_date = "2023-05-13"
+compatibility_flags = [ "nodejs_compat" ]
+kv_namespaces = [
+    { binding = "LD_KV", id="485b74191c8b4c6da9298784eb90724b" },
+]
+logpush=true
