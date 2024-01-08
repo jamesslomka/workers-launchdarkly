@@ -4,7 +4,7 @@ export const initLdClient = async (ldClient: LDClient, LD_KV: KVNamespace): Prom
 	try {
 		if (!ldClient) {
 			console.log('No LD Client... initializing....');
-			const client: LDClient = await init('65579c95933c2613076e0628', LD_KV);
+			const client: LDClient = await init('ADD_LD_CLIENT_SIDE_ID_HERE', LD_KV);
 			ldClient = await client.waitForInitialization();
 			console.log('LD init successful');
 		}
