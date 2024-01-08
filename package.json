@@ -1,13 +1,15 @@
 {
-	"scripts": {
-		"dev": "wrangler dev src/index.ts --live-reload"
-	},
-	"dependencies": {
-		"@cloudflare/kv-asset-handler": "^0.3.0",
-		"@launchdarkly/cloudflare-server-sdk": "^2.3.2"
-	},
-	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20231218.0",
-		"wrangler": "^3.22.3"
-	}
+  "scripts": {
+    "dev": "wrangler dev src/index.ts --live-reload",
+    "format": "prettier --write '**/*.{js,ts,css,json,md}'"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.3.0",
+    "@launchdarkly/cloudflare-server-sdk": "^2.3.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "prettier": "^3.1.1",
+    "wrangler": "^3.22.3"
+  }
 }
